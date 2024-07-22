@@ -25,7 +25,7 @@ describe('E2E Tests', () => {
             cy.get(':nth-child(3) > :nth-child(2) > input').should('be.visible').type("234274712385") // Input CPF
 
             // Validação da seção de Endereço
-            cy.get(':nth-child(4) > .form-header > h2').should('be.visible')git // Título da seção de Endereço
+            cy.get(':nth-child(4) > .form-header > h2').should('be.visible')// Título da seção de Endereço
             cy.get(':nth-child(4) > :nth-child(2) > :nth-child(1) > input').should('be.visible').type("18150000") // Input CEP
             cy.get(':nth-child(2) > :nth-child(2) > input').should('be.visible').click() // Botão buscar CEP
             cy.get(':nth-child(3) > input').should('be.visible'); // Input Rua
